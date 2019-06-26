@@ -117,7 +117,7 @@ def deploy_new_version():
 
 def main():
     " Your favorite wrapper's favorite wrapper "
-    if not upload_to_s3('wimet.zip'):
+    if not upload_to_s3('queproponen.zip'):
         sys.exit(1)
     if not create_new_version():
         sys.exit(1)
