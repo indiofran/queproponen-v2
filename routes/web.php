@@ -11,8 +11,11 @@
 |
 */
 
+//Route::get('/', function () {
+//    return view('layouts.base');
+//});
 Route::get('/', function () {
-    return view('layouts.base');
+    echo "testeoooo";
 });
 //parties
 Route::get('parties', "PartiesController@index");
