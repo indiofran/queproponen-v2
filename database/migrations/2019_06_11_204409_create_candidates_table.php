@@ -20,6 +20,7 @@ class CreateCandidatesTable extends Migration
             $table->unsignedBigInteger('ballot_id');
 			$table->foreign('ballot_id')->references('id')->on('ballots')->onDelete('cascade');
             $table->string('position');
+            $table->string('description')->nullable();
             $table->mediumText('img');
             $table->string('twitter');
             $table->string('facebook')->nullable();
