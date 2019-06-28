@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PartiesController extends Controller
 {
     public function index(){
-    	$parties = Party::all();
+    	$parties = Party::inRandomOrder()->get();
     	return response()->json($parties);
 	}
 	public function show(Party $party){
