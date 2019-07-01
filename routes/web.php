@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('layouts.base');
 });
+Route::domain('www.queproponen.com.ar')->group(function () {
+	Route::permanentRedirect('/', 'http://queproponen.com.ar');
+});
+
 
 //parties
 Route::get('parties', "PartiesController@index");

@@ -1,5 +1,5 @@
 <template>
-			<div :class="cardstyle" :style="'background-color:'+background">
+			<div :class="cardstyle" :style="'background-color:'+backgroundCC">
 				<div class="card-content white-text">
 					<span class="card-title">{{proposal.title}}</span>
 					<p>{{proposal.description}}</p>
@@ -16,7 +16,7 @@
 	export default {
 		name: "ProposalCardComponent",
 		components: {RtComponent},
-		props:['proposal','cardstyle','background'],
+		props:['proposal','cardstyle','backgroundCC'],
 		computed:{
 			rturl(){
 				let url = "https://twitter.com/intent/tweet?text="+this.proposal.title+" @queproponen Mira esta y otras propuestas en &url=https://queproponen.com.ar"

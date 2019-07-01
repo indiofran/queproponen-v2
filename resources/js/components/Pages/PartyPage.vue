@@ -22,8 +22,8 @@
 							<h5> <i class="material-icons" style="vertical-align: bottom;">{{category.image}} </i> {{category.name}}</h5>
 							<div class="divider"></div>
 							<div class="row">
-								<div class="col s6" v-for="proposal in category.partyProposals">
-									<proposal-card-component :cardstyle="['card', category.color]" :proposal="proposal"></proposal-card-component>
+								<div class="col s12" v-for="proposal in category.partyProposals">
+									<proposal-card-component :cardstyle="['card']" :backgroundCC="category.color" :proposal="proposal"></proposal-card-component>
 								</div>
 							</div>
 						</div>

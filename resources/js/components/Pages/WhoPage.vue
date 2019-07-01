@@ -14,7 +14,7 @@
 
 		<div class="row">
 			<h3>Equipo</h3>
-			<div class="col s12 m3 l4 center">
+			<div class="col s12 m6 l4 center team">
 				<img src="https://pbs.twimg.com/profile_images/1054912068128784384/1PCVsmJf_400x400.jpg" class="responsive-img circle">
 				<h5>Gonzalo Stupenengo</h5>
 				<p>Contenido</p>
@@ -22,7 +22,7 @@
 				<div class="col s6"><a  href="https://twitter.com/GonzaStp" target="_blank"><img src="https://image.flaticon.com/icons/png/512/23/23681.png" class="social-icons"> @GonzaStp</a></div>
 
 			</div>
-			<div class="col s12 m3 l4 center">
+			<div class="col s12 m6 l4 center team">
 				<img src="https://media.licdn.com/dms/image/C5103AQESfyCZ5oYHyw/profile-displayphoto-shrink_800_800/0?e=1567036800&v=beta&t=Xkw8BqDuWqdUxN2wDxrVrRTzCNK3gJMtSkhwavz_i6I" class="responsive-img circle">
 				<h5>Paula Ghidini</h5>
 				<p>Comunicación</p>
@@ -30,12 +30,19 @@
 				<div class="col s6"><a  href="https://twitter.com/paulaghidini" target="_blank"><img src="https://image.flaticon.com/icons/png/512/23/23681.png" class="social-icons"> @paulaghidini</a></div>
 
 			</div>
-			<div class="col s12 m3 l4 center">
+			<div class="col s12 m6 l4 center team">
 				<img src="https://media.licdn.com/dms/image/C4E03AQGMFarHhHqHVQ/profile-displayphoto-shrink_200_200/0?e=1567036800&v=beta&t=rjbmVqw95DZroQdeB6gYAx-5CZeajtMBas91q4bXd-g" class="responsive-img circle">
 				<h5>Francisco Gomez Salaverri</h5>
 				<p>Desarrollador</p>
 				<div class="col s6"><a href="https://www.linkedin.com/in/frangsalaverri/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png" class="social-icons"> Linkedin</a></div>
 				<div class="col s6"><a  href="https://twitter.com/fran_indio" target="_blank"><img src="https://image.flaticon.com/icons/png/512/23/23681.png" class="social-icons"> @fran_indio</a></div>
+			</div>
+			<div class="col s12 m6 l4 center team">
+				<img src="https://media.licdn.com/dms/image/C4E03AQEUEl1pgHofeQ/profile-displayphoto-shrink_800_800/0?e=1567641600&v=beta&t=3Viu5LOT9eXIU-azkPumifT1rX39hWBvzLfvXZsDIDw" class="responsive-img circle">
+				<h5>Miguel Soliz</h5>
+				<p>Diseñador</p>
+				<div class="col s6"><a href="https://www.linkedin.com/in/miguelsoliz/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png" class="social-icons"> Linkedin</a></div>
+				<div class="col s6"><a  href="https://twitter.com/miguelsoliz" target="_blank"><img src="https://image.flaticon.com/icons/png/512/23/23681.png" class="social-icons"> @miguelsoliz</a></div>
 			</div>
 
 		</div>
@@ -55,5 +62,8 @@
 	.social-icons{
 		vertical-align: bottom;
 		width: 20px;
+	}
+	.team{
+		margin-bottom: 2em;
 	}
 </style>
