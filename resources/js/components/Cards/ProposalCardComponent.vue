@@ -19,7 +19,7 @@
 		props:['proposal','cardstyle','background'],
 		computed:{
 			rturl(){
-				let url = "https://twitter.com/intent/tweet?text="+this.proposal.title+"&url=https://queproponen.com.ar"
+				let url = "https://twitter.com/intent/tweet?text="+this.proposal.title+" @queproponen Mira esta y otras propuestas en &url=https://queproponen.com.ar"
 				return url;
 			}
 		}

@@ -6,8 +6,11 @@
 				<div class="header valign-wrapper">
 					<div class="header-text row">
 						<div class="col s12">
-							<h1>Que Proponen?</h1>
-							<p>Enterate de las propuesta de cada partido para estas elecciones</p>
+							<h1>¿Qué Proponen?</h1>
+							<p>Todas las propuestas y programas electorales de los Candidatos a Presidente de la Nación 2019.</p>
+							<p>✔Informate</p>
+							<p>✔Compara</p>
+							<p>✔Decidí</p>
 						</div>
 					</div>
 				</div>

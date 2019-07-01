@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta property="og:title" content="¿Qué Proponen?">
+    <meta property="og:description" content="Todas las propuestas y programas electorales de los Candidatos a Presidente de la Nación 2019.">
+{{--    <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">--}}
+    <meta property="og:url" content="https://queproponen.com.ar/">
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
