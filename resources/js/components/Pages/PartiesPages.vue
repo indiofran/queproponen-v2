@@ -8,7 +8,7 @@
 							<h1>¿Qué Proponen?</h1>
 							<p>Todas las propuestas y programas electorales de los Candidatos a Presidente de la Nación 2019.</p>
 							<p>✔Informate</p>
-							<p>✔Compara</p>
+							<p>✔compará</p>
 							<p>✔Decidí</p>
 						</div>
 					</div>
@@ -17,7 +17,7 @@
 		</div>
 		<div class="row">
 			<h3 class="center">Partidos/Frentes Politicos</h3>
-			<div class="col s12 m4 l3" v-for="party in parties">
+			<div class="col s12 m6 l4 xl3" v-for="party in parties">
 				<card-componenet :title="party.name" :img="party.image" :description="party.description" :color="party.color" :partyid="party.id"></card-componenet>
 			</div>
 		</div>

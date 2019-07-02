@@ -21,7 +21,7 @@ from time import strftime, sleep
 import boto3
 from botocore.exceptions import ClientError
 
-VERSION_LABEL = "queProponen-v0.1.4"
+VERSION_LABEL = "queProponen-v0.1.5"
 DESCRIPTION_VERSION = "Minor improves"
 BUCKET_KEY = os.getenv('APPLICATION_NAME') + '/' + VERSION_LABEL + \
     '-bitbucket_builds.zip'
