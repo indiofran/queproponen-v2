@@ -1935,10 +1935,10 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     RtComponent: _Helpers_RtComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  props: ['proposal', 'cardstyle', 'background'],
+  props: ['proposal', 'cardstyle', 'backgroundCC'],
   computed: {
     rturl: function rturl() {
-      var url = "https://twitter.com/intent/tweet?text=" + this.proposal.title + "&url=https://queproponen.com.ar";
+      var url = "https://twitter.com/intent/tweet?text=" + this.proposal.title + " @queproponen Mira esta y otras propuestas en &url=https://queproponen.com.ar";
       return url;
     }
   }
@@ -2058,6 +2058,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2098,6 +2101,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Cards_CardComponenet__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Cards/CardComponenet */ "./resources/js/components/Cards/CardComponenet.vue");
+//
+//
+//
 //
 //
 //
@@ -2202,6 +2208,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2249,6 +2261,17 @@ __webpack_require__.r(__webpack_exports__);
         _this3.categories = res.data;
         console.log(_this3.categories);
       });
+    },
+    hasProposals: function hasProposals() {
+      var self = this;
+
+      for (var i = 0; i < self.categories.length; i++) {
+        if (self.categories[i] > 0) {
+          return true;
+        }
+      }
+
+      return false;
     }
   }
 });
@@ -2264,6 +2287,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6866,7 +6896,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nimg[data-v-445cc2b2]{\n\tmax-height: 100px;\n}\n.social-icons[data-v-445cc2b2]{\n\tvertical-align: bottom;\n\twidth: 20px;\n}\n", ""]);
+exports.push([module.i, "\nimg[data-v-445cc2b2]{\n\tmax-height: 100px;\n}\n.social-icons[data-v-445cc2b2]{\n\tvertical-align: bottom;\n\twidth: 20px;\n}\n.team[data-v-445cc2b2]{\n\tmargin-bottom: 2em;\n}\n", ""]);
 
 // exports
 
@@ -38943,7 +38973,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { class: _vm.cardstyle, style: "background-color:" + _vm.background },
+    { class: _vm.cardstyle, style: "background-color:" + _vm.backgroundCC },
     [
       _c("div", { staticClass: "card-content white-text" }, [
         _c("span", { staticClass: "card-title" }, [
@@ -38999,39 +39029,35 @@ var render = function() {
         _vm.$route.name != "Index"
           ? _c(
               "router-link",
-              { staticClass: "brand-logo", attrs: { to: { name: "Index" } } },
+              {
+                staticClass: "brand-logo hide-on-small-only",
+                attrs: { to: { name: "Index" } }
+              },
               [_vm._v("Que Proponen")]
             )
           : _vm._e(),
         _vm._v(" "),
-        _c(
-          "ul",
-          {
-            staticClass: "right hide-on-med-and-down",
-            attrs: { id: "nav-mobile" }
-          },
-          [
-            _c(
-              "li",
-              [
-                _c("router-link", { attrs: { to: { name: "Team" } } }, [
-                  _vm._v("¿Quienes Somos?")
-                ])
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "li",
-              [
-                _c("router-link", { attrs: { to: { name: "Padron" } } }, [
-                  _vm._v("¿Donde Voto?")
-                ])
-              ],
-              1
-            )
-          ]
-        )
+        _c("ul", { staticClass: "right", attrs: { id: "nav-mobile" } }, [
+          _c(
+            "li",
+            [
+              _c("router-link", { attrs: { to: { name: "Team" } } }, [
+                _vm._v("¿Quiénes Somos?")
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            [
+              _c("router-link", { attrs: { to: { name: "Padron" } } }, [
+                _vm._v("¿Dónde Voto?")
+              ])
+            ],
+            1
+          )
+        ])
       ],
       1
     )
@@ -39222,13 +39248,19 @@ var staticRenderFns = [
         _c("div", { staticClass: "header valign-wrapper" }, [
           _c("div", { staticClass: "header-text row" }, [
             _c("div", { staticClass: "col s12" }, [
-              _c("h1", [_vm._v("Que Proponen?")]),
+              _c("h1", [_vm._v("¿Qué Proponen?")]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Enterate de las propuesta de cada partido para estas elecciones"
+                  "Todas las propuestas y programas electorales de los Candidatos a Presidente de la Nación 2019."
                 )
-              ])
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("✔Informate")]),
+              _vm._v(" "),
+              _c("p", [_vm._v("✔Compara")]),
+              _vm._v(" "),
+              _c("p", [_vm._v("✔Decidí")])
             ])
           ])
         ])
@@ -39271,7 +39303,7 @@ var render = function() {
         _vm._l(_vm.parties, function(party) {
           return _c(
             "div",
-            { staticClass: "col s12 m4 l3" },
+            { staticClass: "col s12 m6 l4 xl3" },
             [
               _c("card-componenet", {
                 attrs: {
@@ -39301,13 +39333,19 @@ var staticRenderFns = [
         _c("div", { staticClass: "header valign-wrapper" }, [
           _c("div", { staticClass: "header-text row" }, [
             _c("div", { staticClass: "col s12" }, [
-              _c("h1", [_vm._v("Que Proponen?")]),
+              _c("h1", [_vm._v("¿Qué Proponen?")]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Enterate de las propuesta de cada partido para estas elecciones"
+                  "Todas las propuestas y programas electorales de los Candidatos a Presidente de la Nación 2019."
                 )
-              ])
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("✔Informate")]),
+              _vm._v(" "),
+              _c("p", [_vm._v("✔Compará")]),
+              _vm._v(" "),
+              _c("p", [_vm._v("✔Decidí")])
             ])
           ])
         ])
@@ -39356,49 +39394,59 @@ var render = function() {
       _vm._v(" "),
       _c("section", { attrs: { id: "content" } }, [
         _c("div", { staticClass: "col s12" }, [
-          _c(
-            "div",
-            { staticClass: "col s12", attrs: { id: "test1" } },
-            _vm._l(_vm.categories, function(category) {
-              return _c("div", [
-                _c("h5", [
-                  _c(
-                    "i",
-                    {
-                      staticClass: "material-icons",
-                      staticStyle: { "vertical-align": "bottom" }
-                    },
-                    [_vm._v(_vm._s(category.image) + " ")]
-                  ),
-                  _vm._v(" " + _vm._s(category.name))
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "divider" }),
-                _vm._v(" "),
-                _c(
+          _c("div", { staticClass: "col s12", attrs: { id: "test1" } }, [
+            !_vm.hasProposals()
+              ? _c(
                   "div",
-                  { staticClass: "row" },
-                  _vm._l(category.partyProposals, function(proposal) {
-                    return _c(
-                      "div",
-                      { staticClass: "col s6" },
-                      [
-                        _c("proposal-card-component", {
-                          attrs: {
-                            cardstyle: ["card", category.color],
-                            proposal: proposal
-                          }
-                        })
-                      ],
-                      1
-                    )
+                  _vm._l(_vm.categories, function(category) {
+                    return _c("div", [
+                      _c("h5", [
+                        _c(
+                          "i",
+                          {
+                            staticClass: "material-icons",
+                            staticStyle: { "vertical-align": "bottom" }
+                          },
+                          [_vm._v(_vm._s(category.image) + " ")]
+                        ),
+                        _vm._v(" " + _vm._s(category.name))
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "divider" }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "row" },
+                        _vm._l(category.partyProposals, function(proposal) {
+                          return _c(
+                            "div",
+                            { staticClass: "col s12" },
+                            [
+                              _c("proposal-card-component", {
+                                attrs: {
+                                  cardstyle: ["card"],
+                                  backgroundCC: category.color,
+                                  proposal: proposal
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        }),
+                        0
+                      )
+                    ])
                   }),
                   0
                 )
-              ])
-            }),
-            0
-          ),
+              : _c("div", [
+                  _c("div", { staticClass: "card-panel teal lighten-2" }, [
+                    _vm._v(
+                      " Este Partido no tiene publicadas propuestas politicas."
+                    )
+                  ])
+                ])
+          ]),
           _vm._v(" "),
           _c(
             "div",
@@ -39428,13 +39476,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("ul", { staticClass: "tabs" }, [
-      _c("li", { staticClass: "tab col s4" }, [
+      _c("li", { staticClass: "tab col s6" }, [
         _c("a", { staticClass: "active", attrs: { href: "#test1" } }, [
           _vm._v("Propuestas")
         ])
       ]),
       _vm._v(" "),
-      _c("li", { staticClass: "tab col s4" }, [
+      _c("li", { staticClass: "tab col s6" }, [
         _c("a", { attrs: { href: "#test3" } }, [_vm._v("Candidatos")])
       ])
     ])
@@ -39479,23 +39527,23 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "A través de esta iniciativa; Que Proponen queremos poner al alcance de la mano de todos los ciudadanos de este país,\n\t\tlas propuestas y programas electorales de todas las fuerzas políticas que participarán de las Elecciones Presidenciales de 2019.\n\t"
+          'A través de esta iniciativa, "Que Proponen" queremos poner al alcance de la mano de todos los ciudadanos de este país,\n\t\tlas propuestas y programas electorales de todas las fuerzas políticas que participarán de las Elecciones Presidenciales de 2019.\n\t'
         )
       ]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "Si queres que el Partido de la Red sea una opcion para el 2021 "
+          "Si queres que el Partido de la Red sea una opción para el 2021 "
         ),
         _c("a", { attrs: { href: "https://partido.red" } }, [
-          _vm._v("Anotate aca.")
+          _vm._v("Anotate acá.")
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
         _c("h3", [_vm._v("Equipo")]),
         _vm._v(" "),
-        _c("div", { staticClass: "col s12 m3 l4 center" }, [
+        _c("div", { staticClass: "col s12 m6 l4 center team" }, [
           _c("img", {
             staticClass: "responsive-img circle",
             attrs: {
@@ -39553,7 +39601,7 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col s12 m3 l4 center" }, [
+        _c("div", { staticClass: "col s12 m6 l4 center team" }, [
           _c("img", {
             staticClass: "responsive-img circle",
             attrs: {
@@ -39611,7 +39659,7 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col s12 m3 l4 center" }, [
+        _c("div", { staticClass: "col s12 m6 l4 center team" }, [
           _c("img", {
             staticClass: "responsive-img circle",
             attrs: {
@@ -39663,6 +39711,63 @@ var staticRenderFns = [
                   }
                 }),
                 _vm._v(" @fran_indio")
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col s12 m6 l4 center team" }, [
+          _c("img", {
+            staticClass: "responsive-img circle",
+            attrs: {
+              src:
+                "https://media.licdn.com/dms/image/C4E03AQEUEl1pgHofeQ/profile-displayphoto-shrink_800_800/0?e=1567641600&v=beta&t=3Viu5LOT9eXIU-azkPumifT1rX39hWBvzLfvXZsDIDw"
+            }
+          }),
+          _vm._v(" "),
+          _c("h5", [_vm._v("Miguel Soliz")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("Diseñador")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col s6" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.linkedin.com/in/miguelsoliz/",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "social-icons",
+                  attrs: {
+                    src:
+                      "https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png"
+                  }
+                }),
+                _vm._v(" Linkedin")
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col s6" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://twitter.com/miguelsoliz",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "social-icons",
+                  attrs: {
+                    src: "https://image.flaticon.com/icons/png/512/23/23681.png"
+                  }
+                }),
+                _vm._v(" @miguelsoliz")
               ]
             )
           ])

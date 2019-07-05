@@ -8,7 +8,7 @@
 							<h1>¿Qué Proponen?</h1>
 							<p>Todas las propuestas y programas electorales de los Candidatos a Presidente de la Nación 2019.</p>
 							<p>✔Informate</p>
-							<p>✔compará</p>
+							<p>✔Compará</p>
 							<p>✔Decidí</p>
 						</div>
 					</div>

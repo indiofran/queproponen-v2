@@ -7,7 +7,7 @@
 
     <meta property="og:title" content="¿Qué Proponen?">
     <meta property="og:description" content="Todas las propuestas y programas electorales de los Candidatos a Presidente de la Nación 2019.">
-{{--    <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">--}}
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1145865499995189249/ytyMvMzH_400x400.jpg">
     <meta property="og:url" content="https://queproponen.com.ar/">
 
     <!-- CSRF Token -->
@@ -17,7 +17,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{  secure_asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">
@@ -29,7 +29,7 @@
 {{--    </div>--}}
 </div>
 <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{  secure_asset('js/app.js') }}"></script>
 
 </body>
 </html>
