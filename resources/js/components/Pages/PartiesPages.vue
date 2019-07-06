@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<h3 class="center">Partidos/Frentes Politicos</h3>
+			<h3 class="center">Partidos/Frentes Políticos</h3>
 			<div class="col s12 m6 l4 xl3" v-for="party in parties">
 				<card-componenet :title="party.name" :img="party.image" :description="party.description" :color="party.color" :partyid="party.id"></card-componenet>
 			</div>
