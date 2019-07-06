@@ -10,6 +10,16 @@
     <meta property="og:image" content="https://pbs.twimg.com/profile_images/1145865499995189249/ytyMvMzH_400x400.jpg">
     <meta property="og:url" content="https://queproponen.com.ar/">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{config('app.analitycs') }}"></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', '{{config('app.analitycs') }}');
+    </script>
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
