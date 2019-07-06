@@ -17,7 +17,7 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', '{{config('app.analitycs') }}');
+		gtag('config', '{{config('app.analitycs') }}', {'page_path': '/#'});
     </script>
 
     <!-- CSRF Token -->
