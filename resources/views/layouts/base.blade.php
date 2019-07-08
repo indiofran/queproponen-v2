@@ -10,15 +10,6 @@
     <meta property="og:image" content="https://pbs.twimg.com/profile_images/1145865499995189249/ytyMvMzH_400x400.jpg">
     <meta property="og:url" content="https://queproponen.com.ar/">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{config('app.analitycs') }}"></script>
-    <script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', '{{config('app.analitycs') }}', {'page_path': '/#'});
-    </script>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -34,12 +25,14 @@
     <navbar-component></navbar-component>
     <router-view></router-view>
     <add-proposal></add-proposal>
-{{--    <div class="footer center blue lighten-4">--}}
-{{--        <p>Hecho con <3 por Pares del Partido de la Red</p>--}}
-{{--    </div>--}}
+    {{--    <div class="footer center blue lighten-4">--}}
+    {{--        <p>Hecho con <3 por Pares del Partido de la Red</p>--}}
+    {{--    </div>--}}
 </div>
 <!-- Scripts -->
+<script>
+    var analyticsCode = "{{config('app.analytics') }}"
+</script>
 <script src="{{  secure_asset('js/app.js') }}"></script>
-
 </body>
 </html>

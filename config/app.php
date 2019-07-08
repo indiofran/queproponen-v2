@@ -36,7 +36,7 @@ return [
     |
     */
 
-	'analitycs' => env('GOOGLE_ANALYTICS', ''),
+	'analytics' => env('GOOGLE_ANALYTICS', ''),
 
     /*
     |--------------------------------------------------------------------------

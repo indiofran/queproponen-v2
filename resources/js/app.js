@@ -15,6 +15,7 @@ window.Vue = require('vue');
 import VueRouter from 'vue-router';
 import IndexPage from "./components/Pages/IndexPage";
 import PartiesPages from "./components/Pages/PartiesPages";
+import VueAnalytics from 'vue-analytics'
 
 
 const routes = [
@@ -56,7 +57,11 @@ export const router = new VueRouter({
  *
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
-
+Vue.use(VueAnalytics, {
+	id: window.analyticsCode,
+	checkDuplicatedScript: true,
+	router
+})
 Vue.use(VueRouter);
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
@@ -74,6 +79,6 @@ Vue.component('add-proposal', require('./components/AddProposal').default);
 Vue.prototype.$M = M;
 
 const app = new Vue({
-    el: '#app',
+	el: '#app',
 	router
 });
