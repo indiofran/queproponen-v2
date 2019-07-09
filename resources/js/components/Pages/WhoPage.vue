@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-		<h1>¿Quienes Somos?</h1>
+		<h2>¿Quienes Somos?</h2>
 		<p>
 			Somos un grupo de activistas que velan por la integración del ciudadano en el proceso de toma de decisiones de la cosa pública,
 			lo que nos llevó, junto a otros ciudadanos, a fundar el Partido de la Red en la Ciudad de Buenos Aires como primer hito y luego,

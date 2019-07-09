@@ -16,6 +16,7 @@ import VueRouter from 'vue-router';
 import IndexPage from "./components/Pages/IndexPage";
 import PartiesPages from "./components/Pages/PartiesPages";
 import VueAnalytics from 'vue-analytics'
+import HowItWorks from "./components/Pages/HowItWorks";
 
 
 const routes = [
@@ -43,6 +44,11 @@ const routes = [
 		path: '/team',
 		name: "Team",
 		component: WhoPage
+	},
+	{
+		path: '/how-it-works',
+		name: "What",
+		component: HowItWorks
 	}
 ]
 

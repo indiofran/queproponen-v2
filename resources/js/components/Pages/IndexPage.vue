@@ -46,7 +46,7 @@
 		methods:{
 			getPorposals(){
 				axios
-					.get("/proposals")
+					.get("/api/proposals")
 					.then(res => {
 						this.categories = res.data
 						console.log(this.categories)

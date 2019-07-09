@@ -87,7 +87,7 @@
 				body._token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
 				console.log(body);
 				axios
-					.post("/proposals",body)
+					.post("/api/proposals",body)
 					.then(res => {
 						self.sendIt = true;
 					})
@@ -95,7 +95,7 @@
 			getParties(){
 				let self = this;
 				axios
-					.get("/parties")
+					.get("/api/parties")
 					.then(res => {
 						self.parties = res.data
 						let elems = document.querySelectorAll('#parties');
@@ -107,7 +107,7 @@
 			getCategories(){
 				let self = this;
 				axios
-					.get("/categories")
+					.get("/api/categories")
 					.then(res => {
 						self.categories = res.data
 						let elems = document.querySelectorAll('#categories');

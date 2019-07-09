@@ -5,7 +5,9 @@
 				<div class="header valign-wrapper">
 					<div class="header-text row">
 						<div class="col s12">
-							<h1>¿Qué Proponen?</h1>
+							<div class="center">
+								<img src="\img\logo_4.png" style="max-width: 350px;">
+							</div>
 							<p>Todas las propuestas y programas electorales de los Candidatos a Presidente de la Nación 2019.</p>
 							<p>✔Informate</p>
 							<p>✔Compará</p>
@@ -17,7 +19,12 @@
 		</div>
 		<div class="row">
 			<h3 class="center">Partidos/Frentes Políticos</h3>
-			<div class="col s12 m6 l4 xl3" v-for="party in parties">
+			<div v-if="parties.length === 0">
+				<div class="col s12 m6 l4 xl3" v-for="i in 6">
+					<preloader-component :contentText="true"></preloader-component>
+				</div>
+			</div>
+			<div v-else class="col s12 m6 l4 xl3" v-for="party in parties">
 				<card-componenet :title="party.name" :img="party.image" :description="party.description" :color="party.color" :partyid="party.id"></card-componenet>
 			</div>
 		</div>
@@ -26,9 +33,10 @@
 
 <script>
 	import CardComponenet from "../Cards/CardComponenet";
+	import PreloaderComponent from "../Helpers/PreloaderComponent";
 	export default {
 		name: "PartiesPages",
-		components: {CardComponenet},
+		components: {PreloaderComponent, CardComponenet},
 		mounted(){
 			this.getParties()
 		},
@@ -40,7 +48,7 @@
 		methods:{
 			getParties(){
 				axios
-					.get("/parties")
+					.get("/api/parties")
 					.then(res => {
 						this.parties = res.data
 						console.log(this.parties);

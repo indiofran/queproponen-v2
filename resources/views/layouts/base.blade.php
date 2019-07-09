@@ -18,7 +18,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Styles -->
-    <link href="{{  secure_asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{  asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">
@@ -33,6 +33,6 @@
 <script>
     var analyticsCode = "{{config('app.analytics') }}"
 </script>
-<script src="{{  secure_asset('js/app.js') }}"></script>
+<script src="{{  asset('js/app.js') }}"></script>
 </body>
 </html>
