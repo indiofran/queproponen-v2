@@ -1,7 +1,7 @@
 <template>
 	<nav>
 		<div class="nav-wrapper">
-			<router-link :to="{name: 'Index'}" class="brand-logo" v-if="$route.name != 'Index' ">Que Proponen</router-link>
+			<router-link :to="{name: 'Index'}" v-if="$route.name != 'Index' ">Que Proponen</router-link>
 			<ul class="right hide-on-med-and-up">
 				<!-- Dropdown Trigger -->
 				<li><a class='dropdown-trigger' href='#' data-target='dropdown1'><i class="material-icons">menu</i></a></li>
