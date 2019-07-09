@@ -16,11 +16,14 @@
 	export default {
 		name: "ProposalCardComponent",
 		components: {RtComponent},
-		props:['proposal','cardstyle','backgroundCC'],
+		props:['proposal','cardstyle','backgroundCC', 'candidate'],
 		computed:{
 			rturl(){
-				let url = "https://twitter.com/intent/tweet?text="+this.proposal.title+" @queproponen Mira esta y otras propuestas en &url=https://queproponen.com.ar"
+				let url = "https://twitter.com/intent/tweet?text=Propuesta: "+this.proposal.title + ". @" + this.getTwitterUser +" %23queProponene Mira esta y otras propuestas en @queproponen &url=https://queproponen.com.ar"
 				return url;
+			},
+			getTwitterUser(){
+				return this.candidate.twitter.replace('https://twitter.com/','')
 			}
 		}
 	}

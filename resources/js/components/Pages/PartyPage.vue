@@ -29,7 +29,7 @@
 								<div class="divider"></div>
 								<div class="row">
 									<div class="col s12" v-for="proposal in category.partyProposals">
-										<proposal-card-component :cardstyle="['card']" :backgroundCC="category.color" :proposal="proposal"></proposal-card-component>
+										<proposal-card-component :candidate="candidates[0]" :cardstyle="['card']" :backgroundCC="category.color" :proposal="proposal"></proposal-card-component>
 									</div>
 								</div>
 							</div>
