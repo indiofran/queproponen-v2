@@ -23,7 +23,7 @@
 								<preloader-component :contentText="true"></preloader-component>
 							</div>
 						</div>
-						<div v-else>
+						<div v-else-if ="proposals">
 							<div v-for="category in categories">
 								<h5> <i class="material-icons" style="vertical-align: bottom;">{{category.image}} </i> {{category.name}}</h5>
 								<div class="divider"></div>
@@ -33,6 +33,9 @@
 									</div>
 								</div>
 							</div>
+						</div>
+						<div v-else>
+							<div class="card-panel teal lighten-2"> Este Partido no tiene publicadas propuestas politicas.</div>
 						</div>
 					</div>
 					<!--					<div id="test2" class="col s12">Test 2</div>-->
@@ -60,7 +63,8 @@
 				candidates: {},
 				categories: [],
 				tabInstance: null,
-				isloaded:false
+				isloaded:false,
+				proposals: false
 			}
 		},
 		created(){
@@ -92,18 +96,21 @@
 					.get("/api/party/" + this.$route.params.id + "/proposals" )
 					.then(res => {
 						this.categories = res.data
+						this.hasProposals();
 						this.isloaded = true
+
 					})
 			},
 			hasProposals(){
 				let self = this;
 				for (let i = 0; i < self.categories.length; i++){
-					if(self.categories[i] > 0 ){
-						return true;
+					if(self.categories[i].partyProposals.length == undefined ){
+						self.proposals = true;
+						return
 					}
 				}
-				return false;
-
+				self.proposals = false;
+				return
 			}
 		}
 	}

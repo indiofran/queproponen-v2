@@ -8,10 +8,10 @@
 							<div class="center">
 								<img src="\img\logo_4.png" style="max-width: 350px;">
 							</div>
-							<p>Todas las propuestas y programas electorales de los Candidatos a Presidente de la Nación 2019.</p>
-							<p>✔Informate</p>
-							<p>✔Compará</p>
-							<p>✔Decidí</p>
+							<h6>Todas las propuestas y programas electorales de los Candidatos a Presidente de la Nación 2019.</h6>
+							<h6>✔ Informate</h6>
+							<h6>✔ Compará</h6>
+							<h6>✔ Decidí</h6>
 						</div>
 					</div>
 				</div>
