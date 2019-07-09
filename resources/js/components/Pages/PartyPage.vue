@@ -35,7 +35,7 @@
 							</div>
 						</div>
 						<div v-else>
-							<div class="card-panel teal lighten-2"> Este Partido no tiene publicadas propuestas politicas.</div>
+							<div class="card-panel teal lighten-2"> Este Partido no tiene publicadas propuestas políticas.</div>
 						</div>
 					</div>
 					<!--					<div id="test2" class="col s12">Test 2</div>-->
