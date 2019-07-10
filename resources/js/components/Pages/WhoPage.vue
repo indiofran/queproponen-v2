@@ -10,7 +10,7 @@
 		<p>A través de esta iniciativa, "Que Proponen" queremos poner al alcance de la mano de todos los ciudadanos de este país,
 			las propuestas y programas electorales de todas las fuerzas políticas que participarán de las Elecciones Presidenciales de 2019.
 		</p>
-		<p>Si queres que el Partido de la Red sea una opción para el 2021 <a href="https://partido.red">Anotate acá.</a> </p>
+		<p>Si queres que el Partido de la Red sea una opción para el 2021 <a href="http://partido.red">Anotate acá.</a> </p>
 
 		<div class="row">
 			<h3>Equipo</h3>
