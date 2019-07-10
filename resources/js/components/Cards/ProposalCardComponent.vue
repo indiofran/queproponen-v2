@@ -19,7 +19,7 @@
 		props:['proposal','cardstyle','backgroundCC', 'candidate'],
 		computed:{
 			rturl(){
-				let url = "https://twitter.com/intent/tweet?text=Propuesta: "+this.proposal.title + ". @" + this.getTwitterUser +" %23queProponene Mira esta y otras propuestas en @queproponen &url=https://queproponen.com.ar"
+				let url = "https://twitter.com/intent/tweet?text=%23QueProponen @" + this.getTwitterUser +" propone: "+this.proposal.title + ". Mira esta y otras propuestas en @queproponen &url=https://queproponen.com.ar"
 				return url;
 			},
 			getTwitterUser(){

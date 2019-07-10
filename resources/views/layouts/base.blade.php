@@ -15,10 +15,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Styles -->
-    <link href="{{  mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">
@@ -29,6 +25,10 @@
     {{--        <p>Hecho con <3 por Pares del Partido de la Red</p>--}}
     {{--    </div>--}}
 </div>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Styles -->
+<link href="{{  mix('css/app.css') }}" rel="stylesheet">
 <!-- Scripts -->
 <script>
     var analyticsCode = "{{config('app.analytics') }}"
