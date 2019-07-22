@@ -3,7 +3,7 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: php:7.2
+image: misterio92/ci-php-node
 
 pipelines:
      branches:  # Pipelines that run automatically on a commit to a branch can also be triggered manually
@@ -13,17 +13,13 @@ pipelines:
                   caches:
                     - composer
                   script:
-                      - apt-get update && apt-get install -y unzip
+                    - apt-get update && apt-get install -y unzip
                       - apt-get install -y zip
                       - apt-get install -y  python-dev
                       - apt-get install -y  gnupg
                       - curl -O https://bootstrap.pypa.io/get-pip.py
-                      - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-                      - curl -sL https://deb.nodesource.com/setup_10.x |  bash -
-                      - apt-get install -y nodejs
-                      - apt-get install -y npm
                       - npm install
-                      - npm run production
+                      - npm run prod
                       - python get-pip.py
                       - composer install
                       - pip install boto3==1.3.0 # required for beanstalk_deploy.py

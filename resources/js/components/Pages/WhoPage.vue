@@ -23,7 +23,7 @@
 
 			</div>
 			<div class="col s12 m6 l4 center team">
-				<img src="https://media.licdn.com/dms/image/C5103AQESfyCZ5oYHyw/profile-displayphoto-shrink_800_800/0?e=1567036800&v=beta&t=Xkw8BqDuWqdUxN2wDxrVrRTzCNK3gJMtSkhwavz_i6I" class="responsive-img circle">
+				<img src="https://media.licdn.com/dms/image/C4E03AQGc6OjfP13faA/profile-displayphoto-shrink_800_800/0?e=1569456000&v=beta&t=84bZfUKlplnrHsRq4Mw5K72vA7y21Tq9ruK8IuYgqTQ" class="responsive-img circle">
 				<h5>Paula Ghidini</h5>
 				<p>Comunicación</p>
 				<div class="col s6"><a href="https://www.linkedin.com/in/mar%C3%ADa-paula-ghidini-a59945151/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png" class="social-icons"> Linkedin</a></div>
