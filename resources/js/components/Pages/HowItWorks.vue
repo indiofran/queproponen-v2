@@ -34,6 +34,8 @@
 
 		</p>
 
+		<p>Puede conocer mas de nuestra plataforma en nuestros <a href="/terms">terminos y condiciones</a></p>
+
 	</div>
 </template>
 

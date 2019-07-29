@@ -28,8 +28,10 @@ Route::prefix('/api')->group(function (){
 	Route::get('party/{party}/proposals', "ProposalsController@getByCategory");
 	Route::get('proposals', "ProposalsController@index");
 	Route::post('proposals', "ProposalsController@store");
-
 //categories
 	Route::get('categories', "CategoriesController@index");
 
 });
+Route::get('/terms', function(){
+	return response()->file( storage_path( 'app/public/Terminos.pdf'));
+})->name('home.terms');

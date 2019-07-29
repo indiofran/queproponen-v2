@@ -21,8 +21,8 @@ from time import strftime, sleep
 import boto3
 from botocore.exceptions import ClientError
 
-VERSION_LABEL = "queProponen-v0.1.92"
-DESCRIPTION_VERSION = "Add google Analitycs"
+VERSION_LABEL = "queProponen-v0.1.93"
+DESCRIPTION_VERSION = "Add google term"
 BUCKET_KEY = os.getenv('APPLICATION_NAME') + '/' + VERSION_LABEL + \
     '-bitbucket_builds.zip'
 
