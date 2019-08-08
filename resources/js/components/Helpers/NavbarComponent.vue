@@ -10,6 +10,9 @@
 					<li><router-link :to="{name:'What'}">¿Qué es?</router-link></li>
 					<li><router-link :to="{name:'Team'}">¿Quiénes Somos?</router-link></li>
 					<li><router-link :to="{name:'Padron'}">¿Dónde Voto?</router-link></li>
+					<li><a target="_blank" href="https://twitter.com/queproponen">
+						Seguinos en Twitter
+					</a></li>
 				</ul>
 			</ul>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
