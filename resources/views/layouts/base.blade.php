@@ -43,7 +43,7 @@
 <link href="{{  mix('css/app.css') }}" rel="stylesheet">
 <!-- Scripts -->
 <script>
-    var analyticsCode = "{{config('app.analytics') }}"
+	var analyticsCode = "{{config('app.analytics') }}"
 </script>
 <script src="{{  mix('js/app.js') }}"></script>
 </body>

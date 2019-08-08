@@ -16,6 +16,10 @@
 				<li><router-link :to="{name:'What'}">¿Qué es?</router-link></li>
 				<li><router-link :to="{name:'Team'}">¿Quiénes Somos?</router-link></li>
 				<li><router-link :to="{name:'Padron'}">¿Dónde Voto?</router-link></li>
+				<li><a class="valign-wrapper" target="_blank" style="height:60px " href="https://twitter.com/queproponen">
+					<img class="img-responsive circle" src="https://image.flaticon.com/icons/svg/54/54300.svg" style="width: 30px">
+					</a></li>
+<!--				<li><a src="https://twitter.com/queproponen"><img class="img-responsive circle" src="http://cdn.onlinewebfonts.com/svg/img_503922.png" style="width: 30px"></a></li>-->
 			</ul>
 		</div>
 	</nav>
